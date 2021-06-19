@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.83.1">
+  <title>Newsletter Signup</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- 在这里既有外面的引用，也有里面的引用，在这种情况下要在app.js中用到app.use(express.static("新建文件夹把里面的引用全都放进去")) -->
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+  <form class="form-signin" action="/" method="post">
+      <img class="mb-4" src="images/newsletter.png" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 fw-normal">Signup to My Newsletter!</h1>
+
+      <input type="text" name="fName" class="form-control top" placeholder="First Name">
+      <input type="text" name="lName" class="form-control middle" placeholder="Last Name">
+      <input type="email" name="email" class="form-control bottom" placeholder ="Email">
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Me Up</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+    </form>
+
+</body>
+</html>
