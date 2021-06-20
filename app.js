@@ -54,7 +54,7 @@ app.post("/", function(req, res) {
     });
   });
 
-  // request.write(jsonData);
+  request.write(jsonData);
   // testing failure page needs to  change the write part to comment.
   request.end();
 });
@@ -66,7 +66,7 @@ app.post("/failure",function(req,res){
 app.listen(process.env.PORT || 3000, function() {
   console.log("server is running on port 3000");
 });
-
+// 这样写process.env.PORT || 3000，就可以使our app works both on heroku and our local system.
 
 // api key
 // 57d1cdbc8fb1294005f8d6f5891f4b35-us6
