@@ -19,6 +19,7 @@ app.post("/", function(req, res) {
   const firstName = req.body.fName;
   const lastName = req.body.lName;
   const email = req.body.email;
+  // data是mailchimp里面的
   const data = {
     members: [
       {
